@@ -11,12 +11,12 @@ llm = HuggingFaceEndpoint(repo_id=hf_model)
 
 
 embedding_model = 'sentence-transformers/all-mpnet-base-v2'
-embeddings_folder = 'C:\\WBS Coding School\\Projects\\Arsenal_Chatbot'
+embeddings_folder = 'data/Arsenal_Chatbot'
 
 embeddings = HuggingFaceEmbeddings(model_name=embedding_model,
                                    cache_folder=embeddings_folder)
 
-WBS_db = FAISS.load_local(r"C:\WBS Coding School\Projects\Arsenal_Chatbot", embeddings, allow_dangerous_deserialization=True)
+WBS_db = FAISS.load_local("data/Arsenal_Chatbot", embeddings, allow_dangerous_deserialization=True)
 
 retriever = WBS_db.as_retriever(search_kwargs={"k": 2})
 
