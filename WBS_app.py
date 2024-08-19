@@ -6,7 +6,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 
 
-hf_model = "mistralai/Mistral-7B-Instruct-v0.3"
+hf_model = "mistralai/Mistral-7B-Instruct-v0.2"
 llm = HuggingFaceEndpoint(repo_id=hf_model)
 
 
