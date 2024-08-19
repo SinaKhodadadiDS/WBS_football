@@ -1,0 +1,9 @@
+huggingface_hub
+streamlit
+langchain
+langchain_community
+langchain_huggingface
+python-dotenv
+faiss-cpu
+wikipedia
+pillow
