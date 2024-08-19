@@ -7,3 +7,4 @@ python-dotenv
 faiss-cpu
 wikipedia
 pillow
+Hug_tocke
